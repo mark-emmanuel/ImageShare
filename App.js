@@ -11,8 +11,13 @@ import { Image, StyleSheet, Text, TouchableOpacity, View, Platform } from 'react
 import * as ImagePicker from 'expo-image-picker';
 import * as Sharing from 'expo-sharing';
 import * as ImageManipulator from "expo-image-manipulator";
+import * as SplashScreen from 'expo-splash-screen';
 
 export default function App() {
+
+  // Splash screen delay
+  SplashScreen.preventAutoHideAsync();
+  setTimeout(SplashScreen.hideAsync,1000);
 
   // Initialize a variable to hold our selected image data.
   const [selectedImage, setSelectedImage] = React.useState(null);
