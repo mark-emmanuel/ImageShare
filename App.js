@@ -2,6 +2,7 @@
  * This app shares pictures
  * @author docs.expo
  * @author Mark Emmanuel
+ * @author Dahn Balan
  */
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
